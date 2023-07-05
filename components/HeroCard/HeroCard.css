@@ -1,0 +1,57 @@
+.herocard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  cursor: pointer;
+
+  flex: 1;
+
+  min-width: 300px;
+
+  align-self: start;
+
+  border-radius: 20px;
+  border: 1px rgba(0, 0, 0, 0.09) solid;
+
+  transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.herocard:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.09);
+}
+
+.herocard h2 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 22px;
+
+  padding: 0 15px;
+  /* max-height: 40px; */
+}
+
+.herocard p {
+  font-family: var(--primary-font);
+  font-size: 15px;
+  font-weight: 500;
+
+
+  color: var(--primary-color);
+  padding: 0 15px;
+}
+
+.herocard p:hover {
+  text-decoration: underline;
+}
+
+.herocard__image {
+  width: 100%;
+  height: 70px;
+  border-radius: inherit;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("../../assets/workday-blue.png");
+}

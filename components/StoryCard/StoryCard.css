@@ -1,0 +1,57 @@
+.storycard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  align-self: flex-start;
+
+  border-radius: 10px;
+
+  padding: 30px 40px;
+
+  background-color: #FFF;
+
+  transition: box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+  cursor: pointer;
+}
+
+.storycard:hover .storycard__mainimage img {
+  transform: scale(1.1)
+}
+
+.storycard__mainimage {
+  overflow: hidden;
+}
+
+.storycard:hover {
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.09);
+}
+
+.storycard__mainimage img {
+  transition: transform .2s ease-out;
+
+  width: 250px;
+  height: 270px;
+  object-fit: contain;
+}
+
+.storycard__logoimage img {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media screen and (max-width:1000px) {
+  .storycard__mainimage img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .storycard__mainimage img {
+    width: 180px;
+  }
+
+}

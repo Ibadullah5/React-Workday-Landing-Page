@@ -1,0 +1,114 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__upperpart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__upperpart h1 {
+  text-align: center;
+}
+
+.footer img {
+  cursor: pointer;
+}
+
+.footer button {
+  background-color: var(--primary-color);
+  color: #FFF;
+
+  padding: 5px 3px;
+
+  height: 50px;
+  width: 150px;
+
+  font-family: var(--primary-font);
+  font-size: 17px;
+  font-weight: 400;
+
+  border: none;
+  outline: none;
+
+  border-radius: 50px;
+
+  transition: all 0.3s;
+}
+
+.footer button:hover {
+  cursor: pointer;
+  background-color: #0054a8;
+}
+
+.footer__line {
+  width: 90vw;
+  height: 4px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 0px 30px 0px;
+}
+
+.part-one {
+  height: 100%;
+  width: 35%;
+  background-color: yellow;
+}
+
+.part-two {
+  height: 100%;
+  width: 35%;
+  background-color: orange;
+}
+
+.part-three {
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+}
+
+.footer__socials {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__socials-workday-img {
+  width: 100px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.footer__socials-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socials-logos img {
+  padding: 15px;
+
+  border-radius: 50%;
+}
+
+.footer__socials-logos img:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__socials {
+    flex-direction: column;
+  }
+}

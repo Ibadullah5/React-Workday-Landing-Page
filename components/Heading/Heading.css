@@ -1,0 +1,37 @@
+.heading__line {
+  width: 100px;
+  height: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px 10px;
+}
+
+.part-one {
+  height: 100%;
+  width: 35%;
+  background-color: yellow;
+}
+
+.part-two {
+  height: 100%;
+  width: 35%;
+  background-color: orange;
+}
+
+.part-three {
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+}
+
+.text {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 15px;
+
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}

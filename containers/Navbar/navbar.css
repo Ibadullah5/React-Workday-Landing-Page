@@ -1,0 +1,296 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+  height: 70px;
+  padding: 0;
+  border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
+}
+
+.navbar__leftside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__leftside img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.navbar__leftside-list {
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.navbar__leftside-list li {
+  font-family: var(--primary-font);
+  font-size: 17px;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 17px 15px;
+
+  border-radius: 50px;
+}
+
+.navbar__leftside-list li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+}
+
+
+.navbar__rightside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navbar__rightside-lang {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+
+  margin-right: 3px;
+
+  border-radius: 50%;
+
+  padding: 17px;
+}
+
+.navbar__rightside-user {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.navbar__rightside-search {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  padding: 10px;
+
+  border-radius: 50%;
+}
+
+.navbar__rightside-hamburger {
+  display: none;
+}
+
+.navbar__rightside-lang:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar__rightside-user:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar__rightside-search:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar__rightside button {
+  background-color: var(--primary-color);
+  color: #FFF;
+
+  padding: 5px 3px;
+
+  height: 50px;
+  width: 150px;
+
+  font-family: var(--primary-font);
+  font-size: 17px;
+  font-weight: 400;
+
+  border: none;
+  outline: none;
+
+  border-radius: 50px;
+}
+
+
+.navbar__mobile {
+  top: 0;
+  left: 0;
+  position: fixed;
+
+  width: 100%;
+  height: 100vh;
+
+  padding-left: 40px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+
+  background-color: #fff;
+
+}
+
+.navbar__mobile-mainlist {
+  width: 80%;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__mobile-mainlist li {
+  margin-bottom: 5px;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 15px;
+}
+
+.navbar__mobile-mainlist li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+}
+
+.navbar__mobile-mainlist li p {
+  font-size: 27px;
+  font-family: var(--primary-font);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.navbar__mobile-secondarylist {
+  width: 80%;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__mobile-secondarylist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+
+}
+
+.navbar__mobile-secondarylist li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+}
+
+.navbar__mobile-secondarylist li div {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__mobile-secondarylist li div p {
+  font-size: 20px;
+  font-family: var(--primary-font);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin: 0;
+}
+
+.navbar__mobile button {
+  margin-top: 150px;
+  margin-left: 130px;
+  background-color: var(--primary-color);
+  color: #FFF;
+
+  padding: 5px 3px;
+
+  height: 60px;
+  width: 600px;
+
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 400;
+
+  border: none;
+  outline: none;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar__leftside-list {
+    display: none;
+  }
+
+  .navbar__rightside-hamburger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .navbar__rightside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    height: 40px;
+  }
+
+  .navbar__leftside img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .navbar__mobile-mainlist li p {
+    font-size: 20px;
+  }
+
+  .navbar__mobile-mainlist li {
+    padding: 0px;
+  }
+
+  .navbar__mobile-secondarylist li {
+    padding: 0;
+  }
+
+  .navbar__mobile-secondarylist li div p {
+    font-size: 15px;
+  }
+
+  .navbar__rightside-hamburger {
+    width: 30px;
+    height: 30px;
+  }
+}
