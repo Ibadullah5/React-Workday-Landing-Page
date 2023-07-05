@@ -3,6 +3,7 @@ import Heading from "../../components/Heading/Heading"
 import StoryCard from "../../components/StoryCard/StoryCard"
 import './Stories.css'
 import storyData from '../../data/storyData'
+import { arrowLeft, arrowRight_1 } from "../../assets"
 
 const Stories = () => {
 
@@ -26,10 +27,10 @@ const Stories = () => {
         <button>See All Stories</button>
         <div className="stories__slider-arrows">
           <div onClick={() => handleScroll('left')}>
-            <img src='../../assets/arrow-left.svg' alt="arrow-left" />
+            <img src={arrowLeft} alt="arrow-left" />
           </div>
           <div onClick={() => handleScroll('right')}>
-            <img src='../../assets/arrow-right (1).svg' alt="arrow-right" />
+            <img src={arrowRight_1} alt="arrow-right" />
           </div>
         </div>
       </div>

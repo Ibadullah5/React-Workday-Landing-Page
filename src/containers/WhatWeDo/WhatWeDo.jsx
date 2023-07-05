@@ -1,5 +1,7 @@
 import './WhatWeDo.css'
 import Heading from '../../components/Heading/Heading'
+import { what_we_do, what_we_do_2 } from '../../assets'
+
 const WhatWeDo = () => {
   return (
     <div className='whatwedo'>
@@ -11,7 +13,7 @@ const WhatWeDo = () => {
             We help you solve your greatest business challenges.
           </h1>
         </div>
-        <img src='../assets/what-we-do.png' alt='what we do' />
+        <img src={what_we_do} alt='what we do' />
       </div>
 
       <div className='whatwedo__middlepart'>
@@ -36,7 +38,7 @@ const WhatWeDo = () => {
       </div>
 
       <div className='whatwedo__lowerpart'>
-        <img src='../assets/what-we-do-2.png' alt='what-we-do' />
+        <img src={what_we_do_2} alt='what-we-do' />
         <div className='whatwedo__lowerpart-heading'>
           <h1 className='main-heading'>
             Amplify your team’s performance with AI.

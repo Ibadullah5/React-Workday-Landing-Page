@@ -1,4 +1,5 @@
 import './Footer.css'
+import { workday, twitter, facebook, instagram, linkdin, youtube } from '../../assets'
 
 const Footer = () => {
   return (
@@ -16,13 +17,13 @@ const Footer = () => {
       </div>
 
       <div className='footer__socials'>
-        <img className='footer__socials-workday-img' src='../assets/workday.png' alt='worlday' />
+        <img className='footer__socials-workday-img' src={workday} alt='worlday' />
         <div className='footer__socials-logos'>
-          <img src='../assets/twitter.svg' alt='twitter' />
-          <img src='../assets/linkdin.svg' alt='linkdin' />
-          <img src='../assets/facebook.svg' alt='facebook' />
-          <img src='../assets/instagram.svg' alt='instagram' />
-          <img src='../assets/youtube.svg' alt='youtube' />
+          <img src={twitter} alt='twitter' />
+          <img src={linkdin} alt='linkdin' />
+          <img src={facebook} alt='facebook' />
+          <img src={instagram} alt='instagram' />
+          <img src={youtube} alt='youtube' />
         </div>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import './About.css'
 import Heading from '../../components/Heading/Heading'
+import { about } from '../../assets'
 
 const About = () => {
   return (
     <div className='about'>
       <Heading text='WHAT WE’RE ABOUT' />
-      <img src='../assets/about.png' alt='about' />
+      <img src={about} alt='about' />
       <div className='about__services'>
         <div className='about__services-service'>
           <h2>

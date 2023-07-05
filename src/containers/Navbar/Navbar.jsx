@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { workday, user, search, language, hamburger, cross, arrowRight } from '../../assets'
 import './navbar.css'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="navbar">
 
       <div className="navbar__leftside">
-        <img src="../assets/workday.png"
+        <img src={workday}
           alt="workday-logo" />
         <ul className='navbar__leftside-list'>
           <li>Products</li>
@@ -25,9 +25,9 @@ const Navbar = () => {
       </div>
 
       <div className="navbar__rightside">
-        <img className='navbar__rightside-lang' src="../assets/language.svg" alt="language" />
-        <img className='navbar__rightside-user' src="../assets/user.svg" alt="user" />
-        <img className='navbar__rightside-search' src="../assets/search.svg" alt="search" />
+        <img className='navbar__rightside-lang' src={language} alt="language" />
+        <img className='navbar__rightside-user' src={user} alt="user" />
+        <img className='navbar__rightside-search' src={search} alt="search" />
         <button>
           Contact Sales
         </button>
@@ -35,52 +35,52 @@ const Navbar = () => {
       <img
         className='navbar__rightside-hamburger'
         onClick={handleToggle}
-        src="../assets/hamburger.svg"
+        src={hamburger}
         alt="hamburger" />
       {toggle && (
         <div className='navbar__mobile'>
           <img
             className='navbar__rightside-hamburger'
             onClick={handleToggle}
-            src="../assets/cross.svg"
+            src={cross}
             alt="cross" />
           <ul className='navbar__mobile-mainlist'>
             <li>
               <p>Products</p>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
             <li>
               <p>Industries</p>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
             <li>
               <p>Customers</p>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
             <li>
               <p>Learn</p>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
             <li>
               <p>Company</p>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
           </ul>
 
           <ul className='navbar__mobile-secondarylist'>
             <li>
               <div>
-                <img className='navbar__rightside-lang' src="../assets/language.svg" alt="language" />
+                <img className='navbar__rightside-lang' src={language} alt="language" />
                 <p>United States(English)</p>
               </div>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
             <li>
               <div>
-                <img className='navbar__rightside-user' src="../assets/user.svg" alt="user" />
+                <img className='navbar__rightside-user' src={user} alt="user" />
                 <p>Sign In</p>
               </div>
-              <img src='../assets/arrow-right.svg' alt='arrow' />
+              <img src={arrowRight} alt='arrow' />
             </li>
           </ul>
           {/* <button>

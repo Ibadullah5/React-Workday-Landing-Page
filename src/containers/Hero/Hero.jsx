@@ -1,6 +1,7 @@
 import './Hero.css'
 import data from '../../data/data'
 import HeroCard from '../../components/HeroCard/HeroCard'
+import { hero } from '../../assets'
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
           <button>Read Guide</button>
         </div>
         <div className='hero__upperpart-image'>
-          <img src='../../assets/hero.png' alt='hero' />
+          <img src={hero} alt='hero' />
         </div>
       </div>
 
