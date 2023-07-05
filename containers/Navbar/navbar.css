@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
 
-
   height: 70px;
   padding: 0;
   border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
@@ -128,8 +127,14 @@
   outline: none;
 
   border-radius: 50px;
+
+  transition: background-color 0.3s;
 }
 
+.navbar__rightside button:hover {
+  cursor: pointer;
+  background-color: #0054a8;
+}
 
 .navbar__mobile {
   top: 0;
